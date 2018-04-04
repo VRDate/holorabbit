@@ -1,6 +1,6 @@
 # holorabbit
 
-This library is a thin C wrapper around RabbitMQ meant to provide simple functions that can be accessed via a C# DLLImport command in Unity.  This is pretty barebones but has been used extensively for my various projects that require RabbitMQ on the Hololens.  It goes without saying that this library requires the C RabbitMQ client library to compile.  I usually compile the entire thing statically into this library as it avoids DLL import issues in Unity where you are having to link two DLLs instead of this single wrapper.
+This library is a thin C wrapper around [RabbitMQ](http://www.rabbitmq.com) meant to provide simple functions that can be accessed via a C# DLLImport command in Unity.  This is pretty barebones but has been used extensively for my various projects that require RabbitMQ on the [Hololens](https://www.microsoft.com/en-us/hololens).  It goes without saying that this library requires the C RabbitMQ client library to compile.  I usually compile the entire thing statically into this library as it avoids DLL import issues in Unity where you are having to link two DLLs instead of this single wrapper.
 
 ## Basic Usage
 0. Everything must be built in x86 32bit!  Hololens doesn't support 64 bit so don't even try.
